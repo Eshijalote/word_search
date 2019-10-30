@@ -563,8 +563,8 @@
             for (var col = 0; col < columncount; col++) {
                 var cvEl = document.createElement('canvas');
                 cvEl.setAttribute('class', 'ws-col');
-                cvEl.setAttribute('width', 15);
-                cvEl.setAttribute('height', 15);
+                cvEl.setAttribute('width', 20);
+                cvEl.setAttribute('height', 20);
 
                 // Fill text in middle center
                 var x = cvEl.width / 2,
