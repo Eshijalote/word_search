@@ -99,6 +99,7 @@
                 this.words = ['browser'];
             }
 
+            
             while (isWorked == false) {
                 // initialize the application
                 this.initialize();
