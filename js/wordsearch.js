@@ -224,8 +224,7 @@
 
         switch (direction) {
             case 'W': // Horizontal (From left to right)
-                var row = Math.rangeInt(
-                    .gridSize  - 1),
+                var row = Math.rangeInt(this.settings.gridSize  - 1),
                     col = Math.rangeInt(this.settings.gridSize - word.length);
                 break;
 
