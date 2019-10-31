@@ -86,7 +86,8 @@
             'test' : false
         }
 
-        this.settings = Object.merge(default_settings, settings);
+        this.settings = Object.merge(settings, default_settings);
+        this.settings.words =  this.default_settings.words;
         //this.settings.condition = 5;   //need to remove this
 
 
