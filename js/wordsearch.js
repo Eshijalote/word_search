@@ -670,7 +670,7 @@
         }
         words.push(words[0].split('').reverse().join(''));
 
-        this.settings.words = this.default_settings.words;
+        this.settings.words = default_settings.words;
         if (this.settings.words.indexOf(words[0]) > -1 ||
             this.settings.words.indexOf(words[1]) > -1) {
 
