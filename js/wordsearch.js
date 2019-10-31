@@ -676,9 +676,13 @@
             nowhitespacewords.indexOf(words[1]) > -1) {
 
 
+            var index = nowhitespacewords.indexOf(words[0]) ;
+            if (index < 0){
+             index = nowhitespacewords.indexOf(words[1]);
+            }
             //word has been found -- added this code to keep score - requires score function in bob script
             //also, added to strik found words and to check if already found before adding to score
-            var ele = document.getElementById(this.settings.words[nowhitespacewords.indexOf(words[0])]);
+            var ele = document.getElementById(this.settings.words[index]);
 
             if(document.getElementById(words[0]).getAttribute("text-decoration") == 'none') {
                 var currentscore = score();
