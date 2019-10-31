@@ -678,7 +678,7 @@
 
             //word has been found -- added this code to keep score - requires score function in bob script
             //also, added to strik found words and to check if already found before adding to score
-            var ele = document.getElementById(words[0])
+            var ele = document.getElementById(this.settings.words[nowhitespacewords.indexOf(words[0])]);
 
             if(document.getElementById(words[0]).getAttribute("text-decoration") == 'none') {
                 var currentscore = score();
