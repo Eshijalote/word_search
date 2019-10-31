@@ -224,7 +224,8 @@
 
         switch (direction) {
             case 'W': // Horizontal (From left to right)
-                var row = Math.rangeInt(this.settings.gridSize  - 1),
+                var row = Math.rangeInt(
+                    .gridSize  - 1),
                     col = Math.rangeInt(this.settings.gridSize - word.length);
                 break;
 
@@ -670,9 +671,10 @@
         }
         words.push(words[0].split('').reverse().join(''));
 
-        this.settings.words = default_settings.words;
-        if (this.settings.words.indexOf(words[0]) > -1 ||
-            this.settings.words.indexOf(words[1]) > -1) {
+        const nowhitespacewords = this.settings.words.map(str => str.replace(/\s/g, ''));
+        
+        if (nowhitespacewords.indexOf(words[0]) > -1 ||
+            nowhitespacewords.indexOf(words[1]) > -1) {
 
 
             //word has been found -- added this code to keep score - requires score function in bob script
