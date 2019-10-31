@@ -684,11 +684,11 @@
             //also, added to strik found words and to check if already found before adding to score
             var ele = document.getElementById(this.settings.words[index]);
 
-            if(document.getElementById(words[0]).getAttribute("text-decoration") == 'none') {
+            if(document.getElementById(this.settings.words[index]).getAttribute("text-decoration") == 'none') {
                 var currentscore = score();
                 document.getElementById("score").innerHTML = "Found " + currentscore + " out of " + this.settings.words.length + " words so far.";
-                document.getElementById(words[0]).style.setProperty("text-decoration", "line-through");
-                document.getElementById(words[0]).setAttribute("text-decoration", "line-through");
+                document.getElementById(this.settings.words[index]).style.setProperty("text-decoration", "line-through");
+                document.getElementById(this.settings.words[index]).setAttribute("text-decoration", "line-through");
             }
 
 
