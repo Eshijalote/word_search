@@ -33,7 +33,7 @@
                 'Montgomery',
                 'Juneau',
                 'Phoenix',
-                'Little Rock',
+                'LittleRock',
                 'Sacramento',
                 'Denver',
                 'Hartford',
